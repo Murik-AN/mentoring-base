@@ -1,3 +1,9 @@
+.full {
+  background-color: #fbfbfb;
+}
+.card-fon {
+  background-color: white;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -81,11 +87,11 @@
 .img1 {
   width: 100%;
 }
-.bosscontainer {
+.information {
   display: flex;
   justify-content: center;
 }
-.container1 {
+.information-container {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 1320px;
@@ -93,12 +99,12 @@
   display: flex;
   justify-content: space-between;
 }
-.container11 {
+.information-container-item {
   display: flex;
   align-items: center;
   margin-right: 15px;
 }
-.bosscontainer2 {
+.product-container-1 {
   display: flex;
   justify-content: center;
 }
@@ -122,30 +128,39 @@
   margin-top: 10px;
 }
 .item-cards__grid-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
   background-image: url(/assets/pulivizator.png);
   background-repeat: no-repeat;
   overflow: hidden;
   box-shadow: 0px 20px 50px 0px #3c3c3b12;
   height: 428px;
   width: 421px;
+  max-width: 428px;
   max-height: 428px;
   background-position-x: left;
   background-position-y: bottom;
   padding: 15px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 24px;
 }
-.text {
+.card-info {
   font-family: Inter;
   font-size: 28px;
   font-weight: 600;
 }
-.button {
-  align-self: end;
+.bloc-button {
+  display: flex;
+  justify-content: end;
+}
+.catalog-button {
+  display: flex;
+  align-items: center;
   border: none;
+  padding: 5px 15px;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
 }
 .strelka {
   margin-left: 10px;
@@ -155,13 +170,199 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: end;
+  max-width: 899px;
 }
-.kartohki {
+.cards {
   width: 421px;
   height: 200px;
   box-shadow: 0px 20px 50px 0px #3c3c3b12;
 }
-.otstup {
-  width: 100%;
-  height: 500px;
+.card-1 {
+  display: flex;
+  background-image: url(/assets/acril.png);
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position-y: bottom;
+}
+.card-1-style {
+  display: flex;
+  justify-content: end;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 20px;
+}
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/assets/vedro-kraski.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+.card-2-style {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 20px;
+  max-width: 231px;
+}
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/assets/germetik.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+.card-3-style {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 20px;
+  max-width: 220px;
+}
+.card-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-image: url(/assets/rozetka.png);
+  background-repeat: no-repeat;
+}
+.card-4-style {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 20px;
+}
+////////////////////////////////////////////////////////////////////////
+.product-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.product-container-2__item-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1412px;
+  height: 491px;
+}
+.product-container-2__item-cards-block1 {
+  display: flex;
+  justify-content: space-between;
+  max-height: 34px;
+  margin-inline: 49px;
+}
+.product-container-2__item-cards-block1__head {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.89px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.product-container-2__item-cards-block1__button {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: none;
+  color: #f0ba4e;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product-container-2__item-cards-grid {
+  display: flex;
+  justify-content: space-around;
+  height: 429px;
+}
+.product-container-2__card {
+  box-shadow: 0px 20px 50px 0px #3c3c3b12;
+}
+.info-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.info-div__bloc {
+  display: flex;
+  justify-content: space-between;
+  height: 251px;
+  width: 1320px;
+  max-height: 251px;
+  max-width: 1320px;
+  background-color: #f6f6f6;
+}
+.info-div__bloc-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px;
+}
+.info-div__bloc-text-1 {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.89px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.info-div__bloc-text-2 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #a1a0a0;
+}
+.info-div__bloc-text-button {
+  border: none;
+  background-color: transparent;
+  color: #f0ba4e;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.bloc-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #4b565e;
+}
+.footer {
+  width: 1320px;
+  height: 373px;
+  max-width: 1320px;
+  max-height: 373px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top__left {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-top__left-bottom {
+  display: flex;
+  justify-content: space-between;
 }
